@@ -88,7 +88,20 @@ export const Header: React.FC<HeaderProps> = ({ screen, onHome }) => {
         )}
 
         <nav style={{ display: "flex", alignItems: "center", gap: 4 }}>
-          {screen === "home" ? (
+            <div style={{
+                width: 34,
+                height: 34,
+                background: "linear-gradient(135deg,#F0A8BC,#D4728A)",
+                borderRadius: 10,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 12,
+                fontWeight: 700,
+                color: "white",
+                marginLeft: 4
+              }}>AS</div>
+          {/* {screen === "home" ? (
             <>
               {["History", "Support"].map(l => (
                 <button
@@ -135,7 +148,7 @@ export const Header: React.FC<HeaderProps> = ({ screen, onHome }) => {
             <button onClick={onHome} className="rs-btn-ghost" style={{ width: "auto", padding: "7px 16px", fontSize: 13 }}>
               ← Home
             </button>
-          )}
+          )} */}
         </nav>
       </div>
     </header>

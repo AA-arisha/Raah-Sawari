@@ -39,7 +39,7 @@ export const RoutePage: React.FC<RoutePageProps> = ({ onConfirm, onBack }) => {
           }}>←</button>
           <div>
             <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, fontWeight: 700, color: "#3D1F2A" }}>Plan Your Route</div>
-            <div style={{ fontSize: 12, color: "#A07080", marginTop: 1 }}>اپنا راستہ منتخب کریں</div>
+            {/* <div style={{ fontSize: 12, color: "#A07080", marginTop: 1 }}>اپنا راستہ منتخب کریں</div> */}
           </div>
         </div>
 
@@ -57,10 +57,10 @@ export const RoutePage: React.FC<RoutePageProps> = ({ onConfirm, onBack }) => {
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: 8, paddingLeft: 4 }}>
+          {/* <div style={{ display: "flex", alignItems: "center", gap: 8, paddingLeft: 4 }}>
             <div style={{ width: 1.5, height: 22, background: "linear-gradient(to bottom,#9D5A6C,#E0A0B0)" }} />
             <button style={{ fontSize: 12, color: "#C0A0B0", background: "none", border: "none", cursor: "pointer", fontFamily: "'Jost',sans-serif" }}>⇅ Swap</button>
-          </div>
+          </div> */}
 
           {/* To */}
           <div style={{ position: "relative" }}>
@@ -131,7 +131,7 @@ export const RoutePage: React.FC<RoutePageProps> = ({ onConfirm, onBack }) => {
             )}
           </div>
 
-          <button style={{
+          {/* <button style={{
             display: "flex",
             alignItems: "center",
             gap: 10,
@@ -153,11 +153,11 @@ export const RoutePage: React.FC<RoutePageProps> = ({ onConfirm, onBack }) => {
               (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(212,114,138,0.24)";
               (e.currentTarget as HTMLButtonElement).style.color = "#C0A0B0";
             }}
-          >🗺️ Choose on map <span style={{ marginLeft: "auto" }}>→</span></button>
+          >🗺️ Choose on map <span style={{ marginLeft: "auto" }}>→</span></button> */}
 
           <div>
             <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase", color: "#C0A0B0", marginBottom: 10 }}>Popular Near You</div>
-            {SUGGESTIONS.slice(0, 4).map((s, i) => (
+            {SUGGESTIONS.slice(0, 3).map((s, i) => (
               <button
                 key={i}
                 onClick={() => setTo(s)}

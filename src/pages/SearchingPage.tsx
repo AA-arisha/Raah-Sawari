@@ -42,7 +42,7 @@ export const SearchingPage: React.FC<SearchingPageProps> = ({ booking, onDriverF
             <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#D4728A", display: "inline-block", animation: "dotPulse 1.2s infinite" }} />
             <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, fontWeight: 700, color: "#3D1F2A" }}>Searching Drivers</span>
           </div>
-          <div style={{ fontSize: 12, color: "#A07080" }}>ڈرائیور تلاش کیا جا رہا ہے</div>
+          {/* <div style={{ fontSize: 12, color: "#A07080" }}>ڈرائیور تلاش کیا جا رہا ہے</div> */}
         </div>
 
         <div style={{ flex: 1, padding: 24, overflowY: "auto", display: "flex", flexDirection: "column", gap: 18 }}>

@@ -1,20 +1,20 @@
 // src/pages/HomePage.tsx
-import React, { useState } from 'react';
-import { FEATURES, RECENT_LOCATIONS } from '../constants';
+import React from 'react';
+// import { FEATURES, RECENT_LOCATIONS } from '../constants';
 
 interface HomePageProps {
   onSearch: (query: string) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
-  const [pickup, setPickup] = useState("");
-  const [dropoff, setDropoff] = useState("");
-  const [active, setActive] = useState<string | null>(null);
+//   const [pickup, setPickup] = useState("");
+//   const [dropoff, setDropoff] = useState("");
+//   const [active, setActive] = useState<string | null>(null);
 
   return (
     <div style={{ background: "#fdf2f5" }}>
       {/* HERO */}
-      <section style={{ position: "relative", overflow: "hidden", height: 610 }}>
+      <section style={{ position: "relative", overflow: "hidden", height: 532 }}>
         <div style={{
           position: "absolute",
           inset: 0,
@@ -61,7 +61,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                 borderRadius: 20,
                 padding: "5px 16px",
                 fontSize: 11,
-                color: "#F0A8BC",
+                color: "#964d61",
                 fontWeight: 600,
                 letterSpacing: "1.2px",
                 textTransform: "uppercase",
@@ -100,9 +100,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
               }}>
                 Set your own fare · Safe rides · Always on time
               </p>
+                <button className="rs-btn-primary fade-up-5" onClick={() => onSearch( "Dolmen Mall Clifton")}>
+                  Find My Ride <span>→</span>
+                </button>
 
               {/* Search card */}
-              <div className="fade-up-4" style={{
+              {/* <div className="fade-up-4" style={{
                 background: "rgba(253,242,245,0.97)",
                 borderRadius: 22,
                 padding: 20,
@@ -168,15 +171,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
 
                 <button className="rs-btn-primary" onClick={() => onSearch(dropoff || "Dolmen Mall Clifton")}>
                   Find My Ride <span>→</span>
-                </button>
-              </div>
+                </button> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* STATS */}
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "32px 32px 0" }}>
+      {/* <div style={{ maxWidth: 1200, margin: "0 auto", padding: "32px 32px 0" }}>
         <div style={{
           background: "linear-gradient(135deg,#3D1F2A,#6B3347)",
           borderRadius: 22,
@@ -192,10 +195,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* FEATURES */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 32px 32px" }}>
+      {/* <section style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 32px 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 36 }}>
           <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: "#D4728A", marginBottom: 10 }}>✦ Why Choose Us ✦</div>
           <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 40, fontWeight: 700, color: "#3D1F2A", lineHeight: 1.15, marginBottom: 10 }}>
@@ -214,12 +217,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <div className="rs-divider" />
+      {/* <div className="rs-divider" /> */}
 
       {/* RECENT + TESTIMONIAL */}
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 32px 32px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22 }}>
+      {/* <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 32px 32px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22 }}>
         <div>
           <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", color: "#C0809A", marginBottom: 16 }}>Recent Places</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
@@ -271,10 +274,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
               </div>
               <div style={{ marginLeft: "auto", color: "#E07B8A", fontSize: 13, letterSpacing: 2 }}>★★★★★</div>
             </div>
-          </div>
+          </div> */}
 
           {/* CTA */}
-          <div style={{
+          {/* <div style={{
             background: "linear-gradient(135deg,#D4728A,#9D5A6C)",
             borderRadius: 20,
             padding: "24px 22px",
@@ -303,9 +306,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             >🌸 Get the App</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div style={{ height: 48 }} />
+      {/* <div style={{ height: 38 }} /> */}
     </div>
   );
 };

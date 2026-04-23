@@ -43,7 +43,7 @@ export const RidesPage: React.FC<RidesPageProps> = ({ route, onBook, onBack }) =
           }}>←</button>
           <div>
             <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, fontWeight: 700, color: "#3D1F2A" }}>Choose a Ride</div>
-            <div style={{ fontSize: 12, color: "#A07080", marginTop: 1 }}>سواری_selectedector کریں</div>
+            {/* <div style={{ fontSize: 12, color: "#A07080", marginTop: 1 }}>سواری_selectedector کریں</div> */}
           </div>
         </div>
 
